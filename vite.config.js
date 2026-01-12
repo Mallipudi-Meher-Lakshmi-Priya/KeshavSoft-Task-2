@@ -3,14 +3,18 @@ import nunjucks from 'vite-plugin-nunjucks';
 import { resolve } from 'path';
 
 export default defineConfig({
-  // This tells Vite where your source files are
+  // 1. This tells GitHub Pages where your site is hosted
+  base: '/KeshavSoft-Task-2/', 
+
+  // 2. This tells Vite where your source files are
   root: 'src/templates', 
+
   plugins: [
     nunjucks()
   ],
+
   build: {
-    // This tells Vite to put the result in the /dist folder 
-    // at the very top of your project
+    // 3. This tells Vite to put the result in the /dist folder
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
     rollupOptions: {
