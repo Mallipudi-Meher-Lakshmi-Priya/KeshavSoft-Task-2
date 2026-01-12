@@ -1,0 +1,22 @@
+{% extends "src/templates/layout.njk" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 border p-4 rounded bg-white shadow">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Submit via Vite</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
